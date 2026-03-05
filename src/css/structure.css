@@ -1,0 +1,119 @@
+.structure {
+  color: #f4eddc;
+  background: #645b58;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+
+.wrapper-info-structure {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.75rem 1.875rem;
+  margin: 0 35px;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 1.25rem;
+    margin: 0;
+    flex-direction: column;
+    grid-column-gap: 3.75rem;
+    grid-row-gap: 3.75rem;
+  }
+}
+
+.main-info-str {
+  display: flex;
+  flex-direction: column;
+  max-width: 30.75rem;
+
+  @media screen and (max-width: 1024px) {
+    max-width: none;
+  }
+}
+
+.main-info-str h2 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  text-align: center;
+  color: #f4eddc;
+  margin-top: 1.25rem;
+  margin-bottom: 3.75rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.8125rem;
+    margin-top: 0.625rem;
+  }
+}
+
+.main-info-str p {
+  font-size: 0.9375rem;
+  line-height: 1.1;
+}
+
+.structure-list {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-column-gap: 3.75rem;
+  grid-row-gap: 3.75rem;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 3.75rem;
+  }
+}
+
+.structure-list li {
+  grid-column-gap: 1.875rem;
+  grid-row-gap: 1.875rem;
+  flex-flow: column;
+  align-items: flex-start;
+  display: flex;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 0.8125rem;
+  }
+}
+
+.comfort-value {
+  font-size: 3.75rem;
+  line-height: 1.1;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+}
+
+.image-structure {
+  position: relative;
+  height: 50.625rem;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    height: 17.875rem;
+  }
+}
+
+.image-structure .img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s linear;
+}
+
+.img-1 {
+  opacity: 1;
+  z-index: 1;
+}
+
+.img-2 {
+  opacity: 0;
+  z-index: 2;
+}

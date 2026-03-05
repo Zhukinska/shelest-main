@@ -1,19 +1,38 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="section-header">
+    <div class="nav-desctop container">
+      <div class="header-coloum">
+        <div class="header-list">
+          <a id="header-btn-bot" class="header-btn" href="/" target="_blank"
+            >Зв’язатись</a
+          >
+          <nav class="header-nav">
+            <a href="/">про проект</a>
+            <a href="/">типи будинків</a>
+            <a href="/">розташування</a>
+          </nav>
+        </div>
+        <div class="coloum-logo">
+          <img class="header-logo" src="/img/logo.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="nav-mobile container">
+      <a class="mobile-logo" href="/" target="_blank">
+        <img class="img-mobile" src="/img/logo-mobile.svg" alt=""
+      /></a>
+      <div class="coloum-mobile">
+        <a
+          id="header-btn-bot"
+          class="mobile-header-btn"
+          href="/"
+          target="_blank"
+          >Зв’язатись</a
+        >
+        <button class="btn-burger-menu js-btn-burger-menu" type="button">
+          <img class="burger" src="/img/burger.svg" alt="open burger menu" />
+        </button>
+      </div>
+    </div>
   </div>
 </header>

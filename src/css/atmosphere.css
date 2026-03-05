@@ -1,0 +1,208 @@
+.atmosphere-page {
+  padding: 3.75rem 1.875rem 1.875rem 1.875rem;
+  margin: 0 auto;
+  background: #645b58;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 3.75rem;
+  }
+}
+
+.columns-atmosphere {
+  display: flex;
+  grid-column-gap: 3.75rem;
+  grid-row-gap: 3.75rem;
+  flex-flow: column;
+}
+
+.wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-left: 1.875rem;
+}
+
+.subtitle-text-atmosphere {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.title-atmosphere {
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f4eddc;
+  text-align: center;
+  max-width: 30.75rem;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    font-size: 1.8125rem;
+  }
+}
+
+.wrapper-logo-info {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.875rem;
+  display: flex;
+
+  @media screen and (max-width: 1024px) {
+    max-width: none;
+    padding-right: 0;
+  }
+}
+
+.logo-atmosphere {
+  max-width: 36.0625rem;
+  @media screen and (max-width: 1024px) {
+    padding-right: 0;
+  }
+}
+
+.logo-atmosphere img {
+  width: 10.375rem;
+  margin-bottom: 1.875rem;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.wrapper-images-atmosphere {
+  grid-column-gap: 0.9375rem;
+  grid-row-gap: 0.9375rem;
+  display: flex;
+  background: #7a726d;
+  overflow: hidden;
+}
+
+.bg-img-home {
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 32.375rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.7s linear;
+  opacity: 1;
+  inset: 0%;
+}
+
+.bg-img-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bg-img-home::after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.875rem;
+  letter-spacing: 0.25em;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.bg-img-home:nth-child(1)::after {
+  content: 'ПРИРОДА';
+}
+.bg-img-home:nth-child(2)::after {
+  content: 'ЗАТИШОК';
+}
+.bg-img-home:nth-child(3)::after {
+  content: 'ДІМ';
+}
+
+.wrapper-images-atmosphere:hover .bg-img-home:hover {
+  width: 46%;
+  z-index: 2;
+}
+
+.wrapper-images-atmosphere:hover .bg-img-home:hover img {
+  filter: brightness(0.7);
+}
+
+.wrapper-images-atmosphere:hover .bg-img-home:not(:hover) {
+  width: 31.5%;
+}
+
+.wrapper-images-atmosphere:hover .bg-img-home:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper-images-atmosphere {
+    flex-direction: column;
+    gap: 16px;
+    height: auto;
+  }
+
+  .bg-img-home {
+    width: 100% !important;
+    height: 180px;
+    transition: none;
+  }
+
+  .bg-img-home img {
+    height: 100%;
+    filter: brightness(0.8);
+  }
+
+  .bg-img-home::after {
+    opacity: 1;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+  }
+
+  .wrapper-images-atmosphere:hover .bg-img-home,
+  .wrapper-images-atmosphere:hover .bg-img-home:hover,
+  .wrapper-images-atmosphere:hover .bg-img-home:not(:hover) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .atmosphere-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    order: 1;
+  }
+
+  .wrapper-images-atmosphere {
+    order: 2;
+  }
+
+  .columns-atmosphere {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper-text {
+    order: 1;
+  }
+
+  .wrapper-logo-info {
+    order: 3;
+  }
+}
