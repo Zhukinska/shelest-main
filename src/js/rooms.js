@@ -10,8 +10,8 @@ const ROOMS_GALLERIES = {
     area: '183.22 м²',
     price: '2500$ м²',
     images: [
-      { thumb: '/img/1A-1.jpg', full: '/img/1A-1.jpg' },
-      { thumb: '/img/1A-2.jpg', full: '/img/1A-2.jpg' },
+      { thumb: './img/1A-1.jpg', full: './img/1A-1.jpg' },
+      { thumb: './img/1A-2.jpg', full: './img/1A-2.jpg' },
       { thumb: 'img/1A-3.jpg', full: 'img/1A-3.jpg' },
       { thumb: 'img/1A-4.jpg', full: 'img/1A-4.jpg' },
       { thumb: 'img/1A-5.jpg', full: 'img/1A-5.jpg' },
