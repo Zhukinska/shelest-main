@@ -37,7 +37,7 @@
     <script type="module" crossorigin src="/shelest-main/index.js"></script>
     <link rel="modulepreload" crossorigin href="/shelest-main/assets/vendor-CfLowE5a.js">
     <link rel="stylesheet" crossorigin href="/shelest-main/assets/vendor-D4OnfJWn.css">
-    <link rel="stylesheet" crossorigin href="/shelest-main/assets/index-BmKQq3vV.css">
+    <link rel="stylesheet" crossorigin href="/shelest-main/assets/index-Bhwq0jGP.css">
   </head>
 
   <body>
@@ -50,7 +50,7 @@
     data-aos-easing="linear"
     data-aos-duration="500"
   >
-    <div class="nav-desctop container">
+    <div class="nav-desctop">
       <div class="header-coloum">
         <div class="header-list">
           <a id="header-btn-bot" class="header-btn" href="/" target="_blank"
@@ -67,8 +67,9 @@
         </div>
       </div>
     </div>
-    <div class="nav-mobile container">
-      <a class="mobile-logo" href="/" target="_blank">
+    <!--  -->
+    <div class="nav-mobile">
+      <a class="mobile-logo" href="#hero">
         <img class="img-mobile" src="/shelest-main/img/logo-mobile.svg" alt=""
       /></a>
       <div class="coloum-mobile">
@@ -96,7 +97,7 @@
       моря, Вишгородський район
     </h2>
   </div>
-  <img class="header-logo hero-logo" src="/shelest-main/img/logo.svg" alt="" />
+  <img class="hero-logo" src="/shelest-main/img/logo.svg" alt="" />
 </section>
 
       <section id="atmosphere" class="atmosphere-page">
@@ -471,8 +472,7 @@
         <li class="is-tall">
           <h3>Тепло</h3>
           <p>
-            тепловий насос, або<br />альтернативний варіант під<br />індівідуальний
-            проєкт
+            тепловий насос, або альтернативний варіант під індівідуальний проєкт
           </p>
         </li>
       </ul>
@@ -656,7 +656,7 @@
 
   <a
     id="header-btn-bot"
-    class="mobile-header-btn burger-btn"
+    class="mobile-header-btn burger-btn js-close-on-click"
     href="#form-footer"
     >Зв’язатись</a
   >
@@ -677,6 +677,8 @@
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   </script>
 </html>
